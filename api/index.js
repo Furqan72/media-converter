@@ -27,8 +27,15 @@ const BLOB_READ_WRITE_TOKEN_READ_WRITE_TOKEN = 'vercel_blob_rw_8oL0c4E3y4emK5Iq_
 
 const app = express();
 
+// const AllowedDomains = {
+//   origin: ['https://video-converter2.vercel.app', 'https://video-converter2.vercel.app/image-converter', 'https://video-converter2.vercel.app/image-converter/', 'http://localhost:5173'],
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin', 'Allow'],
+//   optionsSuccessStatus: 200,
+//   credentials: false,
+// };
 const AllowedDomains = {
-  origin: ['https://video-converter2.vercel.app', 'https://video-converter2.vercel.app/image-converter', 'https://video-converter2.vercel.app/image-converter/', 'http://localhost:5173'],
+  origin: ['https://media-converter-three.vercel.app', 'https://media-converter-three.vercel.app/image-converter', 'https://media-converter-three.vercel.app/image-converter/', 'http://localhost:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin', 'Allow'],
   optionsSuccessStatus: 200,

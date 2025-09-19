@@ -49,7 +49,8 @@ export const useGlobalStore = defineStore('GlobalStore', () => {
 
     await axios
       // .post('http://localhost:8080/' + convert, formData, {
-        .post('https://video-converter-api.vercel.app/' + convert, formData, {
+      // .post('https://video-converter-api.vercel.app/' + convert, formData, {
+      .post('https://media-converter-nmot.vercel.app/' + convert, formData, {
         withCredentials: false,
         headers: {
           'Content-Type': 'multipart/form-data',
