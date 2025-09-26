@@ -1,5 +1,5 @@
 <template>
-  <div class="grid h-[350px] bg-[#363636ff] px-4 py-14 pt-20 text-white comd:px-20 md:px-28 lg:grid-cols-2">
+  <div class="grid h-[420px] bg-[#363636ff] px-4 py-14 pt-20 text-white sm:h-[350px] comd:px-20 md:px-28 lg:grid-cols-2">
     <div class="maxlg:text-center">
       <h1 class="text-3xl font-bold leading-relaxed">
         Transform <span>{{ convertingName === '' ? 'your video files' : convertingName.label }}</span> Files into <span :class="GlobalData.selectedFormat !== '...' ? 'uppercase' : ''">{{ GlobalData.selectedFormat === '...' ? 'a Variety of Formats' : GlobalData.selectedFormat.substring(1) }}</span
@@ -10,11 +10,11 @@
     <div class="flex justify-center text-center maxlg:pb-12">
       <div class="mt-10 font-semibold">
         <span class="mr-3">Convert</span>
-        <select v-model="GlobalData.selectedFileFormat" name="ConvertFromSelect" selected=".mp4" class="w-36 rounded-lg border bg-[#363636ff] px-4 py-3 text-lg outline-none">
+        <select v-model="GlobalData.selectedFileFormat" name="ConvertFromSelect" selected=".mp4" class="w-24 rounded-lg border bg-[#363636ff] px-4 py-3 text-lg outline-none sm:w-36">
           <option v-for="(option, index) in videoFormats" :key="index" :value="option.value">{{ option.label }}</option>
         </select>
         <span class="mx-3">to</span>
-        <select @change="updateSelectedFormat" name="selectMenu" class="w-36 rounded-lg border bg-[#363636ff] px-4 py-3 text-lg outline-none">
+        <select @change="updateSelectedFormat" name="selectMenu" class="w-24 rounded-lg border bg-[#363636ff] px-4 py-3 text-lg outline-none sm:w-36">
           <option v-for="(option, index) in computedconvertTo" :key="index" :value="option.value">{{ option.label }}</option>
         </select>
       </div>

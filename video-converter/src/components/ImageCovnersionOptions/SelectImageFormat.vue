@@ -1,5 +1,5 @@
 <template>
-  <div class="grid h-[350px] bg-[#363636ff] px-4 py-14 pt-20 text-white comd:px-20 md:px-28 lg:grid-cols-2">
+  <div class="grid h-[420px] bg-[#363636ff] px-4 py-14 pt-20 text-white sm:h-[350px] comd:px-20 md:px-28 lg:grid-cols-2">
     <div class="maxlg:text-center">
       <h1 class="text-3xl font-bold leading-relaxed">
         Transform <span>{{ convertingName === '' ? 'your video files' : convertingName.label }}</span> Files into <span :class="GlobalData.imageSelectedFormat !== '...' ? 'uppercase' : ''">{{ GlobalData.imageSelectedFormat === '...' ? 'a Variety of Formats' : GlobalData.imageSelectedFormat.substring(1) }}</span

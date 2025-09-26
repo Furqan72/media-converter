@@ -12,7 +12,7 @@
       <ReuseableFileUpload :loading-bar="GlobalData.uploadLoading" :file-size="GlobalData.fileSize" :selected-format="GlobalData.selectedImageFileFormat" :size-limit="GlobalData.fileSizeExceeded" :check-format="GlobalData.formatCheck" />
 
       <!-- Options -->
-      <div class="mx-auto h-full bg-[#f9f9f9ff] px-28">
+      <div class="mx-auto h-full bg-[#f9f9f9ff] px-4 py-14 comd:px-20 md:px-28">
         <div class="bg-white pb-14">
           <!-- Video options -->
           <EditingOptions />
